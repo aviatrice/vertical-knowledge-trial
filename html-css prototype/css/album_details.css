@@ -1,0 +1,51 @@
+#detail_pane {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#detail_pane .details_wrapper {
+	margin: auto;
+	padding: 1em;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: 40em;
+	height: 40em;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(180, 180, 180, 0.85);
+	text-align: center;
+	overflow: hidden;
+}
+
+#detail_pane .details_wrapper img {
+	width: 100%;
+	height: 100%;
+}
+
+#detail_pane .songs_wrapper {
+	visibility: hidden;
+}
+
+#detail_pane .details_wrapper:hover .songs_wrapper {
+	visibility: visible;
+	margin: auto;
+	padding: 1em;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: 35em;
+	height: 25em;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(180, 180, 180, 0.85);
+}
+
+#detail_pane .songs_wrapper h2 {
+	margin: 0;
+	text-align: left;
+}
+
+#detail_pane .songs_wrapper p {
+	text-align: left;
+}

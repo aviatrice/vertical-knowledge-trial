@@ -1,0 +1,23 @@
+.songlabel {
+	display: inline-block;
+	width: 1em;
+}
+
+.songinput {
+	display: inline-block;
+	width: 70%;
+	margin-bottom: 0.5em;
+}
+
+.block {
+	display: block;
+}
+
+@media(min-width:992px) {
+	.songlabel {
+		text-align: right;
+	}
+	.songinput {
+		width: 95%;
+	}
+}

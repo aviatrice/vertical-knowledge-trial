@@ -1,0 +1,8 @@
+p.artist {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+p.artist a {
+	color: rgb(38,77,115);
+}

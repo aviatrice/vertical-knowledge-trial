@@ -1,0 +1,9 @@
+{% for field in form %}
+	{% if "Id" not in field.label %}
+		<div class="form-group">
+			{{ field.errors }}
+			{{ field.label_tag }}
+			{{ field }}
+		</div>
+	{% endif %}
+{% endfor %}

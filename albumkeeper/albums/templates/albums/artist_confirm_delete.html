@@ -1,0 +1,11 @@
+{% extends 'albums/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<p>Are you sure you want to delete {{ object.name }}?</p>
+	<form action="" method="post">
+    	{% csrf_token %}
+    	<input type="submit" class="btn btn-default" value="Yes" />
+    	<a href={% url "albums:artists" %}><input type="button" class="btn btn-default" value="No" /></a>
+    </form>
+{% endblock %}

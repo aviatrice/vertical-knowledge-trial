@@ -1,0 +1,81 @@
+{% extends 'albums/base.html' %}
+{% load staticfiles %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static "albums/css/artists.css" %}"></link>
+    <link rel="stylesheet" type="text/css" href="{% static "albums/css/tags.css" %}"></link>
+    <link rel="stylesheet" type="text/css" href="{% static "albums/css/album_details.css" %}"></link>
+    <link rel="stylesheet" type="text/css" href="{% static "albums/css/artist_details.css" %}"></link>
+{% endblock %}
+
+{% block content %}
+    {% for tag in object_list %}
+        {% if tag.albums.all %}
+            <h2>{{ tag.name }}</h2>
+            <div>
+                {% for album in tag.albums.all %}
+                    <div class="album">
+                        <img src="{{ album.art.url }}" alt="{{ album.title }} album art" class="album_art_small" />
+                        <p class="album_detail_url hidden">{% url "albums:album_detail" album.id %}</p>
+                        <p class="artist"><a href="#" class="artist_link">{{ album.artist.name }}</a></p>
+                        <p class="artist_detail_url hidden">{% url "albums:artist_detail" album.artist.id %}</p>
+                        <p>{{ album.title }} ({{ album.year }})</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#search_field").on("input", function() {
+                var str = $(this).val();
+                $("h2").each(function() {
+                    console.log($(this).next().text())
+                    if($(this).text().indexOf(str)==-1 && $(this).next().text().indexOf(str)==-1) {
+                        $(this).addClass("hidden");
+                    } else {
+                        $(this).removeClass("hidden");
+                    }
+                });
+                $(".album").each(function() {
+                    if($(this).text().indexOf(str)==-1) {
+                        $(this).addClass("hidden");
+                    } else {
+                        $(this).removeClass("hidden");
+                    }
+                });
+            });
+            $("img").on("click", function() {
+                var url = $(this).next().text();
+                jQuery.ajax(url).done(function(data) {
+                    $("#content").after(data);
+                    $("body").on("click", "#close_detail_pane", function() {
+                        $(this).remove();
+                        $('#album_detail_pane').remove();
+                    });
+                    var resizePane = function() {
+                        var height = $("#album_detail_pane").height();
+                        var width = $("#album_detail_pane").width();
+                        if(height<width) $("#album_detail_pane").width(height);
+                        else $("#album_detail_pane").height(width);
+                    }
+                    resizePane();
+                    $(window).resize(resizePane());
+                });
+            });
+            $(".artist_link").on("click", function() {
+                var url = $(this).parent().next().text();
+                jQuery.ajax(url).done(function(data) {
+                    $("#content").after(data);
+                    $("body").on("click", "#close_detail_pane", function() {
+                        $(this).remove();
+                        $('#artist_detail_pane').remove();
+                    });
+                });
+            });
+        });
+    </script>
+{% endblock %}

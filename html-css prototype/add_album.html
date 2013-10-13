@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Album Rack</title>
+        <meta name="description" content="An album collection visualizer.">
+        <meta name="viewport" content="width=device-width">
+		
+		<link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+		<nav class="col-md-2 col-md-offset-3">
+			<a href="artists.html">By Artist</a>
+			<a href="tags.html">By Tag</a>
+			<a href="add_artist.html">Add an Artist</a>
+			<a class="active" href="add_album.html">Add an Album</a>
+		</nav>
+		<div id="content" class="col-md-6">
+			<h1><a href="artists.html">The Album Rack</a></h1>
+			<h2>Add an Album</h2>
+			<form id="album_form">
+				<div class="form-group">
+					<label for="artist">Artist</label>
+					<select class="form-control">
+						<option>Miles Davis</option>
+						<option>Pink Floyd</option>
+						<option>The Dave Brubeck Quartet</option>
+						<option>The Flaming Lips</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="title">Title</label>
+					<input type="text" class="form-control" id="title" placeholder="Enter album title">
+				</div>
+				<div class="form-group">
+					<label class="block">Songs</label>
+					<label class="songlabel" for="song_1">1.</label>
+					<input type="text" class="form-control songinput" id="song_1" placeholder="Enter track 1 title"><br/>
+					<label class="songlabel" for="song_2">2.</label>
+					<input type="text" class="form-control songinput" id="song_2" placeholder="Enter track 2 title"><br/>
+					<label class="songlabel" for="song_3">3.</label>
+					<input type="text" class="form-control songinput" id="song_3" placeholder="Enter track 3 title"><br/>
+					<button class="btn btn-default">Add Song</button>
+				</div>
+				<div class="form-group">
+					<label for="art">Art</label>
+					<input type="file" id="art">
+					<p class="help-block">Choose a picture of the artist to upload.</p>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+
+		</div>
+    </body>
+</html>

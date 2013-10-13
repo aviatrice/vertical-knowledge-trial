@@ -1,0 +1,220 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1186" measuredH="752" mockupW="1156" mockupH="734">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="30" y="18" w="1156" h="734" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>3355443</color>
+        <text>The%20Album%20Rack%0Alocalhost%3A8000/albums/artists</text>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="30" y="92" w="1156" h="631" measuredW="2301" measuredH="1168" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>../albumkeeper/static/albums/img/background.jpg</src>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="532" y="122" w="620" h="526" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="547" y="135" w="178" h="-1" measuredW="178" measuredH="32" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>The%20Album%20Rack</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="__group__" x="547" y="220" w="100" h="130" measuredW="100" measuredH="130" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="4">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::SearchBox" x="1005" y="139" w="120" h="-1" measuredW="120" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>search</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="547" y="182" w="58" h="-1" measuredW="58" measuredH="26" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Artist%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="547" y="371" w="63" h="-1" measuredW="63" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Artist%202</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="__group__" x="382" y="135" w="128" h="32" measuredW="128" measuredH="32" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="128" h="32" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="8">
+          <controlProperties>
+            <backgroundAlpha>0.75</backgroundAlpha>
+            <color>10470904</color>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="7" y="3" w="115" h="-1" measuredW="72" measuredH="26" zOrder="1" locked="false" isInGroup="8">
+          <controlProperties>
+            <size>18</size>
+            <text>By%20Artist</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="9" controlTypeID="__group__" x="382" y="176" w="128" h="32" measuredW="128" measuredH="32" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="128" h="32" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="9"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="7" y="3" w="115" h="-1" measuredW="57" measuredH="26" zOrder="1" locked="false" isInGroup="9">
+          <controlProperties>
+            <size>18</size>
+            <text>By%20Tag</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="10" controlTypeID="__group__" x="382" y="217" w="128" h="32" measuredW="128" measuredH="32" zOrder="10" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="128" h="32" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="10"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="7" y="3" w="115" h="-1" measuredW="108" measuredH="26" zOrder="1" locked="false" isInGroup="10">
+          <controlProperties>
+            <size>18</size>
+            <text>Add%20an%20Artist</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="11" controlTypeID="__group__" x="382" y="258" w="128" h="32" measuredW="128" measuredH="32" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="128" h="32" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="11"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="7" y="3" w="115" h="-1" measuredW="112" measuredH="26" zOrder="1" locked="false" isInGroup="11">
+          <controlProperties>
+            <size>18</size>
+            <text>Add%20an%20Album</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="12" controlTypeID="__group__" x="671" y="220" w="100" h="130" measuredW="100" measuredH="130" zOrder="12" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="12">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="12">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="13" controlTypeID="__group__" x="795" y="220" w="100" h="130" measuredW="100" measuredH="130" zOrder="13" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="13">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="13">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="14" controlTypeID="__group__" x="919" y="220" w="100" h="130" measuredW="100" measuredH="130" zOrder="14" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="14">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="15" controlTypeID="__group__" x="671" y="412" w="100" h="130" measuredW="100" measuredH="130" zOrder="15" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="15">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="15">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="16" controlTypeID="__group__" x="547" y="412" w="100" h="130" measuredW="100" measuredH="130" zOrder="16" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="16">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="16">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="17" controlTypeID="__group__" x="795" y="412" w="100" h="130" measuredW="100" measuredH="130" zOrder="17" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="100" h="100" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="17">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="66" h="-1" measuredW="66" measuredH="21" zOrder="1" locked="false" isInGroup="17">
+          <controlProperties>
+            <text>Album%20Title</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Title" x="533" y="167" w="-1" h="-1" measuredW="129" measuredH="43" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Artist%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Image" x="486" y="222" w="223" h="272" measuredW="2736" measuredH="3584" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>http%3A//fc05.deviantart.net/fs70/f/2012/127/8/5/biggie_smalls_by_carlosvelasquezart-d4yuklf.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="__group__" x="216" y="138" w="785" h="494" measuredW="785" measuredH="494" zOrder="18" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="785" h="494" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="22">
+          <controlProperties>
+            <backgroundAlpha>0.75</backgroundAlpha>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="759" y="10" w="-1" h="475" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="22"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Paragraph" x="336" y="509" w="523" h="107" measuredW="200" measuredH="80" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>This%20is%20a%20sample%20bio.%20Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Suspendisse%20mollis%20sapien%20mi%2C%20at%20mattis%20enim%20tristique%20at.%20Etiam%20mollis%20rhoncus%20ante%2C%20vel%20dignissim%20augue%20ultrices%20eu.%20Pellentesque%20id%20interdum%20dolor%2C%20nec%20gravida%20felis.%20Nulla%20facilisi.%20Nam%20egestas%20lorem%20vel%20lectus%20luctus%20pulvinar.%20Sed%20velit%20arcu%2C%20congue%20in%20accumsan%20vel%2C%20molestie%20semper%20justo.%20Nullam%20dui%20urna%2C%20feugiat%20eget%20varius%20nec%2C%20facilisis%20sit%20amet%20est.%20In%20bibendum%20felis%20at%20arcu%20dapibus%20luctus.%20Nulla%20facilisi.%20Nam%20mattis%20porttitor%20tincidunt.%20Integer%20tincidunt%20turpis%20a%20quam%20tempus%20congue.%20Donec%20sagittis%20pulvinar%20magna%2C%20ut%20tincidunt%20lorem%20placerat%20vel.%20Donec%20congue%20malesuada%20egestas.%20Aenean%20molestie%20aliquam%20iaculis.%0A%20%0AIn%20congue%20tincidunt%20tellus%20vitae%20malesuada.%20Aliquam%20vitae%20facilisis%20erat%2C%20eu%20tempus%20nisl.%20Nunc%20dignissim%20diam%20eu%20velit%20pellentesque%20iaculis.%20Nam%20sed%20lobortis%20elit.%20Vivamus%20bibendum%2C%20nisl%20ut%20porta%20tristique%2C%20sem%20nisi%20suscipit%20lorem%2C%20euismod%20cursus%20sem%20velit%20quis%20augue.%20Maecenas%20eu%20tempor%20urna.%20Cras%20eu%20fermentum%20enim.%20Ut%20laoreet%20dui%20velit%2C%20et%20commodo%20libero%20tincidunt%20eget.%20Duis%20sit%20amet%20erat%20non%20arcu%20ornare%20faucibus.%20Suspendisse%20ac%20quam%20vitae%20nisl%20gravida%20tincidunt%20lobortis%20a%20metus.%20Integer%20sit%20amet%20dui%20imperdiet%2C%20posuere%20lorem%20vel%2C%20placerat%20mauris.%20Suspendisse%20eu%20odio%20mollis%2C%20pulvinar%20leo%20at%2C%20condimentum%20odio.%20Morbi%20vel%20mi%20sit%20amet%20justo%20porta%20condimentum.%20Cras%20imperdiet%20cursus%20massa%2C%20eu%20consequat%20diam%20cursus%20vel.%20In%20et%20suscipit%20leo.%20Nam%20vestibulum%20consequat%20neque.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,23 @@
+.album {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.album_art_small {
+	width: 13em;
+	height: 13em;
+	margin-right: 0.5em;
+	padding: 0.75em;
+	background: rgba(255,255,255,0.75);
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+.album_art_small:hover {
+	padding: 0;
+	cursor: pointer;
+}
+
+.album p {
+	width: 12em;
+}

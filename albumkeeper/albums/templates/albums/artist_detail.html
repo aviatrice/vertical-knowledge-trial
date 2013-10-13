@@ -1,0 +1,8 @@
+<a href="#" id="close_detail_pane">
+	<div id="modal_background"></div>
+</a>
+<div id="artist_detail_pane">
+	<h1>{{ object.name }}</h1>
+	<img src="{{ object.pic.url }}" alt="{{ object.name }}" />
+	<p>{{ object.bio|linebreaks }}</p>
+</div>

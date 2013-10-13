@@ -1,0 +1,61 @@
+{% extends 'albums/base.html' %}
+{% load staticfiles %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static "albums/css/form.css" %}"></link>
+{% endblock %}
+
+{% block title %}
+	<h1>Album Rack</h1>
+	<h2>Add an Album</h2>
+{% endblock %}
+
+{% block content %}
+	<div id="song_template" class="hidden">
+		<div class="form-group">
+			<label for="id_song_set-0-title" class="songlabel">1.</label>
+			<input id="id_song_set-0-title" class="form-control songinput" type="text" name="song_set-0-title" maxlength="100">
+		</div>
+	</div>
+    <form id="albumform" action="" method="post" enctype="multipart/form-data">
+    	{% csrf_token %}
+    	{{ form.non_field_errors }}
+    	{{ formset.management_form }}
+    	{% include "albums/form_snippet.html" %}
+    	<div class="form-group">
+    		<label for="id_tags">Tags</label>
+    		<input id="id_tags" class="form-control" type="text" name="tags" placeholder="Enter a list of tags, separated by commas">
+    	</div>
+    	<h2>Songs</h2>
+    	<div class="form-group">
+			<label for="id_song_set-0-title" class="songlabel">1.</label>
+			<input id="id_song_set-0-title" class="form-control songinput" type="text" name="song_set-0-title" maxlength="100">
+	    </div>
+    	<input type="submit" class="btn btn-default" value="Create" />
+    </form>
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#albumform").on("input", ".songinput", function() {
+				if($(this).is($(".songinput").last())) {
+					var len = $(".songinput").length-1;
+					var re = new RegExp("0-title", "g")
+					var newdiv = $("#song_template").clone().html().replace(re,len+"-title").replace("1.",len+1+".");
+					$(this).parent().after(newdiv);
+				}
+			});
+			$("#albumform").on("blur", ".songinput", function() {
+				if($(this).val()=="" && !$(this).is($(".songinput").last())) {
+					$(this).val($(this).parent().next().children(".songinput").first().val());
+					$(this).parent().nextAll().each(function() {
+						console.log($(this).children(".songinput").first().val());
+						$(this).children(".songinput").first().val($(this).next().children(".songinput").first().val());
+					});
+					$(".form-group").last().remove();
+				}
+			});
+		});
+	</script>
+{% endblock %}
