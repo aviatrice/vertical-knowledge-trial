@@ -56,3 +56,7 @@
 #album_detail_pane .songs_wrapper p {
 	text-align: left;
 }
+
+#album_detail_pane .btn {
+	margin-top: 2em;
+}
