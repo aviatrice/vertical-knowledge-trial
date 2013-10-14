@@ -14,8 +14,9 @@ class ArtistForm(ModelForm):
 class AlbumForm(ModelForm):
 	class Meta:
 		model = Album
-		fields = ['artist', 'title', 'year', 'art']
+		fields = ['id', 'artist', 'title', 'year', 'art']
 		widgets = {
+			'id':TextInput(attrs={'class':'hidden'}),
 			'artist':Select(attrs={'class':'form-control'}),
 			'title':TextInput(attrs={'class':'form-control'}),
 			'year':TextInput(attrs={'class':'form-control'}),
