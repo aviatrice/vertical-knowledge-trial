@@ -69,7 +69,11 @@ def album_create(request):
 
 def album_edit(request, pk):
 	if request.method == 'POST':
-		form = AlbumForm(request.POST, request.FILES)
+		album = Album.objects.get(pk=pk)
+		if album:
+			form = AlbumForm(request.POST, request.FILES, instance=album)
+		else:
+			form = AlbumForm(request.POST, request.FILES)
 		if form.is_valid():
 			# save album
 			album = form.save()
@@ -87,7 +91,7 @@ def album_edit(request, pk):
 					tag.save()
 			# save songs
 			for song in album.song_set.all():
-				song.remove()
+				song.delete()
 			index = 0
 			while 'song_set-'+str(index)+'-title' in request.POST:
 				title = request.POST['song_set-'+str(index)+'-title']
