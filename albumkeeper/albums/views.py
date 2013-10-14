@@ -95,6 +95,7 @@ def album_edit(request, pk):
 			index = 0
 			while 'song_set-'+str(index)+'-title' in request.POST:
 				title = request.POST['song_set-'+str(index)+'-title']
+				print title
 				if title!="":
 					song = Song(title=title, album=album)
 					song.save()

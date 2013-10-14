@@ -30,12 +30,12 @@
     		{% for song in song_set %}
     			<div class="form-group">
     				<label for="id_song_set-{{forloop.counter0}}-title" class="songlabel">{{forloop.counter}}</label>
-    				<input id="id_song_set-{{forloop.counter0}}-title" class="form-control songinput" type="text" name="song_set-"+{{forloop.counter0}}+"-title" maxlength="100" value="{{song.title}}">
+    				<input id="id_song_set-{{forloop.counter0}}-title" class="form-control songinput" type="text" name="song_set-{{forloop.counter0}}-title" maxlength="100" value="{{song.title}}">
     			</div>
     			{% if forloop.last %}
 	    			<div class="form-group">
-	    				<label for="id_song_set-"+{{forloop.counter}}+"-title" class="songlabel">{{forloop.counter|add:1}}</label>
-	    				<input id="id_song_set-"+{{forloop.counter}}+"-title" class="form-control songinput" type="text" name="song_set-"+{{forloop.counter}}+"-title" maxlength="100" value="">
+	    				<label for="id_song_set-{{forloop.counter}}-title" class="songlabel">{{forloop.counter|add:1}}</label>
+	    				<input id="id_song_set-{{forloop.counter}}-title" class="form-control songinput" type="text" name="song_set-{{forloop.counter}}-title" maxlength="100" value="">
 	    			</div>
     			{% endif %}
     		{% endfor %}
