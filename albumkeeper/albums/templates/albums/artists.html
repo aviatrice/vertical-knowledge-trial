@@ -9,19 +9,17 @@
 
 {% block content %}
     {% for artist in object_list %}
-        {% if artist.album_set.all %}
-            <h2><a href="#" class="artist_link">{{ artist.name }}</a></h2>
-            <div>
-                {% for album in artist.album_set.all %}
-                    <div class="album">
-                        <img src="{{ album.art.url }}" alt="{{ album.title }} album art" class="album_art_small" />
-                        <p>{{ album.title }} ({{ album.year }})</p>
-                        <p class="album_detail_url hidden">{% url "albums:album_detail" album.id %}</p>
-                    </div>
-                {% endfor %}
-            </div>
-            <p class="artist_detail_url hidden">{% url "albums:artist_detail" artist.id %}</p>
-        {% endif %}
+        <h2><a href="#" class="artist_link">{{ artist.name }}</a></h2>
+        <div>
+            {% for album in artist.album_set.all %}
+                <div class="album">
+                    <img src="{{ album.art.url }}" alt="{{ album.title }} album art" class="album_art_small" />
+                    <p>{{ album.title }} ({{ album.year }})</p>
+                    <p class="album_detail_url hidden">{% url "albums:album_detail" album.id %}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <p class="artist_detail_url hidden">{% url "albums:artist_detail" artist.id %}</p>
     {% endfor %}
 {% endblock %}
 

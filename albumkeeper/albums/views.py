@@ -82,7 +82,7 @@ def album_edit(request, pk):
 				else:
 					tag = Tag(name=tag_name)
 					tag.save()
-				if album not in tag.albums:
+				if album not in tag.albums.all():
 					tag.albums.add(album)
 					tag.save()
 			# save songs
@@ -110,3 +110,4 @@ def album_edit(request, pk):
 		else:
 			form = AlbumForm()
 			return render_to_response('albums/album_form.html', {'form':form}, context_instance=RequestContext(request))
+	return render_to_response('albums/album_form.html', {'form':form}, context_instance=RequestContext(request))

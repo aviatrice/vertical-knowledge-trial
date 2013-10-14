@@ -19,6 +19,8 @@ class Album(models.Model):
 	art_width = models.PositiveIntegerField()
 	def __unicode__(self):
 		return self.title
+	class Meta:
+		ordering = ['year','title']
 
 class Song(models.Model):
 	title = models.CharField(max_length=100)
